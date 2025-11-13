@@ -1,1 +1,101 @@
+/* --- RESETEO BÁSICO Y FUENTE GENERAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a; /* negro profundo */
+  color: #eaeaea; /* gris claro, no blanco puro */
+  font-family: 'Oswald', sans-serif; /* fuente base para párrafos */
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* --- ESTILOS DE SECCIONES --- */
+section {
+  min-height: 100vh; /* cada sección ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  text-align: center;
+  transition: background 1s ease-in-out;
+}
+
+/* --- TÍTULOS PRINCIPALES --- */
+h1 {
+  font-family: 'Spell of Asia', cursive;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: #f0e6d2;
+  text-shadow: 0 0 10px rgba(255, 245, 200, 0.4);
+  margin-bottom: 40px;
+}
+
+/* --- BOTÓN INICIAL --- */
+.btn-empezar {
+  background: transparent;
+  border: 2px solid #f0e6d2;
+  color: #f0e6d2;
+  font-family: 'Oswald', sans-serif;
+  padding: 15px 40px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.btn-empezar:hover {
+  background: #f0e6d2;
+  color: #0a0a0a;
+  transform: scale(1.05);
+}
+
+/* --- PÁRRAFOS --- */
+p {
+  max-width: 900px;
+  font-size: 1.2rem;
+  color: #d8d8d8;
+  opacity: 0.9;
+  text-align: justify;
+}
+
+/* --- EFECTOS DE COLOR ENTRE SECCIONES (para dar ritmo visual) --- */
+.inicio {
+  background: linear-gradient(to bottom, #0a0a0a, #1b1b1b);
+}
+
+.humanidad {
+  background: radial-gradient(circle at center, #1c1b18, #0a0a0a);
+}
+
+.parrafo-1 { background: linear-gradient(to bottom, #101010, #181818); }
+.parrafo-2 { background: linear-gradient(to bottom, #181818, #101010); }
+.parrafo-3 { background: linear-gradient(to bottom, #0d0d0d, #141414); }
+.parrafo-4 { background: linear-gradient(to bottom, #141414, #0d0d0d); }
+.parrafo-5 { background: linear-gradient(to bottom, #101010, #1b1b1b); }
+.parrafo-6 { background: linear-gradient(to bottom, #0a0a0a, #151515); }
+.parrafo-7 { background: linear-gradient(to bottom, #0d0d0d, #1b1b1b); }
+.parrafo-8 { background: linear-gradient(to bottom, #141414, #0a0a0a); }
+.parrafo-9 { background: linear-gradient(to bottom, #0a0a0a, #1a1a1a); }
+.parrafo-10 { background: linear-gradient(to bottom, #181818, #0a0a0a); }
+.parrafo-11 { background: linear-gradient(to bottom, #0a0a0a, #181818); }
+.parrafo-12 { background: linear-gradient(to bottom, #181818, #0a0a0a); }
+.parrafo-13 { background: linear-gradient(to bottom, #101010, #181818); }
+.parrafo-14 { background: linear-gradient(to bottom, #0a0a0a, #000000); }
+
+/* --- EFECTO DE TRANSICIÓN AL HACER SCROLL (opcional si luego agregas JS) --- */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
